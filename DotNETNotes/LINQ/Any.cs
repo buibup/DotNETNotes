@@ -17,6 +17,11 @@ namespace DotNETNotes.LINQ
             if (isShow)
             {
                 Utilities.PrintStart(new Any().ToString());
+
+                #region Any
+                ///<summary>
+                /// Linq Any
+                /// </summary>
                 var numbers = new[] { 1, 2, 3, 4, 5 };
                 var isNotEmpty = numbers.Any();
                 Console.WriteLine(isNotEmpty); //True
@@ -28,6 +33,10 @@ namespace DotNETNotes.LINQ
                 Console.WriteLine(anyNumberIsOdd); //True
                 var anyNumberIsNegative = numbers.Any(n => n < 0);
                 Console.WriteLine(anyNumberIsNegative); //False
+                #endregion
+
+
+
                 Utilities.PrintEnd(new Any().ToString());
             }
         }
