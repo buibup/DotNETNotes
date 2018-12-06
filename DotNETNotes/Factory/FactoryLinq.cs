@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Single = DotNETNotes.LINQ.Single;
 
 namespace DotNETNotes.Factory
 {
@@ -36,5 +37,39 @@ namespace DotNETNotes.Factory
         public static Min GetMin() => new Min();
 
         public static Distinct GetDistinct() => new Distinct();
+
+        public static Count GetCount() => new Count();
+
+        public static Cast GetCast() => new Cast();
+
+        public static Range GetRange() => new Range();
+
+        public static ThenBy GetThenBy() => new ThenBy();
+
+        public static Repeat GetRepeat() => new Repeat();
+
+        public static Empty GetEmpty() => new Empty();
+
+        public static Select GetSelect() => new Select();
+
+        public static OrderBy GetOrderBy() => new OrderBy();
+
+        public static OrderByDescending GetOrderByDescending() => new OrderByDescending();
+
+        public static Contains GetContains() => new Contains();
+
+        public static First GetFirst() => new First();
+
+        public static Single GetSingle() => new Single();
+
+        public static Last GetLast() => new Last();
+
+        public static LastOrDefault GetLastOrDefault() => new LastOrDefault();
+
+        public static SingleOrDefault GetSingleOrDefault() => new SingleOrDefault();
+
+        public static FirstOrDefault GetFirstOrDefault() => new FirstOrDefault();
+
+        public static Skip GetSkip() => new Skip();
     }
 }

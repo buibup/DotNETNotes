@@ -47,7 +47,41 @@ namespace DotNETNotes
 
                 using (var min = FactoryLinq.GetMin()) min.Output(!isShow);
 
-                using (var distinct = FactoryLinq.GetDistinct()) distinct.Output(isShow);
+                using (var distinct = FactoryLinq.GetDistinct()) distinct.Output(!isShow);
+
+                using (var count = FactoryLinq.GetCount()) count.Output(!isShow);
+
+                using (var cast = FactoryLinq.GetCast()) cast.Output(!isShow);
+
+                using (var range = FactoryLinq.GetRange()) range.Output(!isShow);
+
+                using (var thenBy = FactoryLinq.GetThenBy()) thenBy.Output(!isShow);
+
+                using (var repeat = FactoryLinq.GetRepeat()) repeat.Output(!isShow);
+
+                using (var empty = FactoryLinq.GetEmpty()) empty.Output(!isShow);
+
+                using (var select = FactoryLinq.GetSelect()) select.Output(!isShow);
+
+                using (var orderBy = FactoryLinq.GetOrderBy()) orderBy.Output(!isShow);
+
+                using (var orderByDescending = FactoryLinq.GetOrderByDescending()) orderByDescending.Output(!isShow);
+
+                using (var contains = FactoryLinq.GetContains()) contains.Output(!isShow);
+
+                using (var first = FactoryLinq.GetFirst()) first.Output(!isShow);
+
+                using (var single = FactoryLinq.GetSingle()) single.Output(!isShow);
+
+                using (var last = FactoryLinq.GetLast()) last.Output(!isShow);
+
+                using (var lastOrDefault = FactoryLinq.GetLastOrDefault()) lastOrDefault.Output(!isShow);
+
+                using (var singleOrDefault = FactoryLinq.GetSingleOrDefault()) singleOrDefault.Output(!isShow);
+
+                using (var firstOrDefault = FactoryLinq.GetFirstOrDefault()) firstOrDefault.Output(!isShow);
+
+                using (var skip = FactoryLinq.GetSkip()) skip.Output(isShow);
             }
 
         }
