@@ -81,7 +81,41 @@ namespace DotNETNotes
 
                 using (var firstOrDefault = FactoryLinq.GetFirstOrDefault()) firstOrDefault.Output(!isShow);
 
-                using (var skip = FactoryLinq.GetSkip()) skip.Output(isShow);
+                using (var skip = FactoryLinq.GetSkip()) skip.Output(!isShow);
+
+                using (var take = FactoryLinq.GetTake()) take.Output(!isShow);
+
+                using (var reverse = FactoryLinq.GetReverse()) reverse.Output(!isShow);
+
+                using (var ofType = FactoryLinq.GetOfType()) ofType.Output(!isShow);
+
+                using (var max = FactoryLinq.GetMax()) max.Output(!isShow);
+
+                using (var average = FactoryLinq.GetAverage()) average.Output(!isShow);
+
+                using (var groupBy = FactoryLinq.GetGroupBy()) groupBy.Output(!isShow);
+
+                using (var toDictionary = FactoryLinq.GetToDictionary()) toDictionary.Output(!isShow);
+
+                using (var union = FactoryLinq.GetUnion()) union.Output(!isShow);
+
+                using (var toArray = FactoryLinq.GetToArray()) toArray.Output(!isShow);
+
+                using (var toList = FactoryLinq.GetToList()) toList.Output(!isShow);
+
+                using (var elementAt = FactoryLinq.GetElementAt()) elementAt.Output(!isShow);
+
+                using (var elementAtOrDefault = FactoryLinq.GetElementAtOrDefault()) elementAtOrDefault.Output(!isShow);
+
+                using (var skipWhile = FactoryLinq.GetSkipWhile()) skipWhile.Output(!isShow);
+
+                using (var takeWhile = FactoryLinq.GetTakeWhile()) takeWhile.Output(!isShow);
+
+                using (var defaultIfEmpty = FactoryLinq.GetDefaultIfEmpty()) defaultIfEmpty.Output(!isShow);
+
+                using (var join = FactoryLinq.GetJoin()) join.Output(!isShow);
+
+                using (var leftOuterJoin = FactoryLinq.GetLeftOuterJoin()) leftOuterJoin.Output(isShow);
             }
 
         }

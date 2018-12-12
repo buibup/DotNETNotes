@@ -71,5 +71,39 @@ namespace DotNETNotes.Factory
         public static FirstOrDefault GetFirstOrDefault() => new FirstOrDefault();
 
         public static Skip GetSkip() => new Skip();
+
+        public static Take GetTake() => new Take();
+
+        public static Reverse GetReverse() => new Reverse();
+
+        public static OfType GetOfType() => new OfType();
+
+        public static Max GetMax() => new Max();
+
+        public static Average GetAverage() => new Average();
+
+        public static GroupBy GetGroupBy() => new GroupBy();
+
+        public static ToDictionary GetToDictionary() => new ToDictionary();
+
+        public static Union GetUnion() => new Union();
+
+        public static ToArray GetToArray() => new ToArray();
+
+        public static ToList GetToList() => new ToList();
+
+        public static ElementAt GetElementAt() => new ElementAt();
+
+        public static ElementAtOrDefault GetElementAtOrDefault() => new ElementAtOrDefault();
+
+        public static SkipWhile GetSkipWhile() => new SkipWhile();
+
+        public static TakeWhile GetTakeWhile() => new TakeWhile();
+
+        public static DefaultIfEmpty GetDefaultIfEmpty() => new DefaultIfEmpty();
+
+        public static Join GetJoin() => new Join();
+
+        public static LeftOuterJoin GetLeftOuterJoin() => new LeftOuterJoin();
     }
 }
